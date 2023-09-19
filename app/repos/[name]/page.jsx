@@ -1,7 +1,8 @@
+import Repo from "@/components/Repo"
 import Link from "next/link"
 import React from "react"
 
-const Repopage = ({ params: { name } }) => {
+const RepoPage = ({ params: { name } }) => {
   return (
     <div className="flex flex-col justify-start items-start max-w-lg">
       <Link
@@ -16,4 +17,4 @@ const Repopage = ({ params: { name } }) => {
   )
 }
 
-export default Repopage
+export default RepoPage
