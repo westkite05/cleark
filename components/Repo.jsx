@@ -15,6 +15,8 @@ async function fetchRepo(name) {
 
 const Repo = async ({ name }) => {
   const repo = await fetchRepo(name)
+  const username = "bradtraversy"
+
   return (
     <div>
       <h3 className="text-xl font-bold">
