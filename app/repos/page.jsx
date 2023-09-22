@@ -1,8 +1,9 @@
+import { githubUsername } from "@/constants/constants"
 import Link from "next/link"
 import React from "react"
 import { FaStar, FaCodeBranch, FaEye } from "react-icons/fa"
 
-const username = "bradtraversy"
+const username = githubUsername
 
 async function fetchRepos() {
   const url = `https://api.github.com/users/${username}/repos`
