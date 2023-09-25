@@ -2,7 +2,7 @@
 import Courses from "@/components/Courses"
 import { useState, useEffect } from "react"
 import LoadingPage from "../loading"
-// import CourseSearch from "@/components/CourseSearch"
+import CourseSearch from "@/components/CourseSearch"
 
 const CoursesPage = () => {
   const [courses, setCourses] = useState([])
@@ -26,7 +26,7 @@ const CoursesPage = () => {
   return (
     <div>
       <h1 className="text-2xl font-bold mb-4">Courses </h1>
-      {/* <CourseSearch getSearchResults={(results) => setCourses(results)} /> */}
+      <CourseSearch getSearchResults={(results) => setCourses(results)} />
       <Courses courses={courses} />
     </div>
   )
