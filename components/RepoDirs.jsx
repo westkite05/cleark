@@ -5,7 +5,7 @@ import React from "react"
 const username = githubUsername
 
 async function fetchRepoContents(name) {
-  await new Promise((resolve) => setTimeout(resolve, 1000))
+  //await new Promise((resolve) => setTimeout(resolve, 1000))
   const response = await fetch(
     `https://api.github.com/repos/${username}/${name}/contents`
   )
